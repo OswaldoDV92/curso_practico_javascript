@@ -7,12 +7,125 @@
     <title>Figuras Geométricas</title>
 </head>
 <body>
-    <h1>
-        Figuras Geométricas.
-    </h1>
-    <p>
-        Calcular el área y el perímetro de un cuadrado.
-    </p>
+    <header>
+        <h1>
+            Figuras Geométricas.
+        </h1>
+        <p>
+            Calcular el área y el perímetro de algunas figuras geométricas.
+        </p>
+    </header>
+
+    <section>
+        <h3>Calcular el área y perímetro de un cuadrado.</h3>
+        <form>
+            <p>
+                <label for="entradaCuadrado">
+                    Escribe cuanto mide el lado del cuadrado.
+                </label>
+                <input id="entradaCuadrado" type="number" />
+            </p>
+
+            <button type="button" onclick="calcularPerimetroCuadrado()">
+                Calcular el perímetro
+            </button>
+            <button type="button" onclick="calcularAreaCuadrado()">
+                Calcular el área
+            </button>
+        </form>
+    </section>
+
+    <section>
+        <h3>Calcular el área y perímetro de un triángulo.</h3>
+        <form>
+            <p>
+                <label for="entradaBaseTriangulo">
+                    Escribe cuanto mide la base del triángulo.
+                </label>
+                <input id="entradaBaseTriangulo" type="number" />
+            </p>
+
+            <p>
+                <label for="entradaLadoTriangulo1">
+                    Escribe cuanto mide el lado 1 del triángulo.
+                </label>
+                <input id="entradaLadoTriangulo1" type="number" />
+            </p>
+
+            <p>
+                <label for="entradaLadoTriangulo2">
+                    Escribe cuanto mide el lado 2 del triángulo.
+                </label>
+                <input id="entradaLadoTriangulo2" type="number" />
+            </p>
+
+            <p>
+                <label for="entradaAlturaTriangulo">
+                    Escribe cuanto mide la altura del triángulo.
+                </label>
+                <input id="entradaAlturaTriangulo" type="number" />
+            </p>
+
+            <button type="button" onclick="calcularPerimetroTriangulo()" >
+                Calcular el perímetro
+            </button>
+            
+            <button type="button" onclick="calcularAreaTriangulo()" >
+                Calcular el área
+            </button>
+        </form>
+    </section>
+
+    <section>
+        <h3>Calcular el área y la circunferencia de un círculo.</h3>
+        <form>
+            <p>
+                <label for="entradaCuadrado">
+                    Escribe cuanto mide el radio del círculo.
+                </label>
+                <input id="entradaRadioCirculo" type="number" />
+            </p>
+
+            <button type="button" onclick="calcularCircunferencia()">
+                Calcular la circunferencia
+            </button>
+            <button type="button" onclick="calcularAreaCirculo()">
+                Calcular el área
+            </button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Bonus.</h2>
+        <h3>Calcular la altura de un triángulo isósceles.</h3>
+        <form>
+            <p>
+                <label for="entradaBaseIsosceles">
+                    Escribe cuanto mide la base del triángulo.
+                </label>
+                <input id="entradaBaseIsosceles" type="number" />
+            </p>
+
+            <p>
+                <label for="entradaLadoIsosceles1">
+                    Escribe cuanto mide el lado 1 del triángulo.
+                </label>
+                <input id="entradaLadoIsosceles1" type="number" />
+            </p>
+
+            <p>
+                <label for="entradaLadoIsosceles2">
+                    Escribe cuanto mide el lado 2 del triángulo.
+                </label>
+                <input id="entradaLadoIsosceles2" type="number" />
+            </p>
+
+            <button type="button" onclick="calcularAlturaIsosceles()" >
+                Calcular la altura
+            </button>
+            
+        </form>
+    </section>
 
     <script src="./figuras.js"></script>
 
