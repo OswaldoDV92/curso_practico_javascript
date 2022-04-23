@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porcentajes y Descuentos</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Porcentajes y descuentos.
+        </h1>
+        <p>
+            Calcula el precio final de un objeto de acuerdo al precio inicial y el descuento indicados.
+        </p>
+    </header>
+
+    <section>
+        <form>
+            <p>
+                <label for="precio">
+                    Ingresa el precio del producto.
+                </label>
+                <input id="precio" type="Number"/>
+            </p>
+
+            <p>
+                <label for="descuento">
+                    Ingresa el descuento del producto.
+                </label>
+                <input id="descuento" type="number"/>
+            </p>
+
+            <p>
+                <label for="cupones">
+                    Ingresa un cupón para un descuento adicional.
+                </label>
+                <input id="cupones"/>
+            </p>
+
+            <button type="button" onclick="validar_cupon()">
+                Validar cupón
+            </button>
+
+            <button type="button" onclick="precio_final()">
+                Calcular el precio
+            </button>
+
+            <p id="validar_cupon"></p>
+
+            <p id="Precio_Final"></p>
+        </form>
+    </section>
+    
+    <script src="./descuentos.js"></script>
+</body>
+</html>
